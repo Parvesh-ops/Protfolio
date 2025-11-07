@@ -1,5 +1,6 @@
 import React from "react";
 import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaFigma } from "react-icons/fa";
+import { LuArrowUpRight } from "react-icons/lu";
 import { SiTailwindcss } from "react-icons/si";
 
 const Home = () => {
@@ -92,8 +93,8 @@ const Home = () => {
                 </div>
             </div>
             {/* Work Section */}
-            <section className="mb-16 px-6 md:px-12">
-                <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex items-center gap-2 text-gray-900 dark:text-white">
+            <section className=" mt-17 mb-16 px-6 md:px-12">
+                <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex items-center  gap-2 text-gray-900 dark:text-white ">
                     Work
                     <img
                         alt="Flower Icon"
@@ -110,7 +111,7 @@ const Home = () => {
                     creating seamless user experiences, writing structured and reusable code, and
                     ensuring fast load times for modern web applications.
                     <br /><br />
-                    I take pride in transforming UI designs into pixel-perfect components, optimizing
+                    I take pride in transforming UI or Figma designs into pixel-perfect components, optimizing
                     websites for mobile and desktop devices, and implementing modern frontend practices
                     like <span>component reusability</span>,
                     <span> state management</span>, and
@@ -119,18 +120,19 @@ const Home = () => {
                         visual appeal</span> and <span>technical precision</span>.
                 </p>
 
-                {/* Internship and Projects */}
+                {/* Internship */}
                 <h2 className="text-2xl md:text-3xl font-heading font-semibold mt-5 mb-4 text-gray-900 dark:text-white">
-                    Internship & Projects
+                    Internship
                 </h2>
                 <div className="space-y-6">
                     <div className="flex flex-col">
                         <a
                             href="https://deltatechnepal.com/"
                             target="_blank"
-                            className="text-lg md:text-xl font-medium text-[#289c28] underline"
+                            className="flex items-center text-lg md:text-xl font-medium text-[#289c28] underline group"
                         >
                             Delta Tech PVT.LTD
+                            <LuArrowUpRight className="w-6 h-7 ml-1 transition-transform duration-300 group-hover:-translate-y-1" />
                         </a>
                         <p className="text-gray-700 dark:text-gray-300 font-sans mt-1">
                             Frontend Developer
@@ -144,20 +146,38 @@ const Home = () => {
                         <a
                             href="https://swikarcodes.com/"
                             target="_blank"
-                            className="text-lg md:text-xl font-medium bg-gradient-to-r from-blue-600 to-purple-500 bg-clip-text text-transparent relative"
+                            className="flex items-center text-lg md:text-xl font-medium text-blue-400 underline group"
                         >
                             Swikar Codes
-                            <span className="absolute left-0 bottom-0 w-31 h-[1px] bg-gradient-to-r from-blue-600 to-purple-500"></span>
+                            <LuArrowUpRight className="w-6 h-7 ml-1 transition-transform duration-300 group-hover:-translate-y-1" />
                         </a>
-
                         <p className="text-gray-700 dark:text-gray-300 font-sans mt-1">
-                            frontend Developer
+                            Frontend Developer
                         </p>
                         <span className="text-gray-500 dark:text-gray-400 text-sm">
-                            may 2024 - Aug 2025
+                            Aug 2025 - Present
                         </span>
                     </div>
                 </div>
+
+                {/* Projects */}
+                <section>
+                    <div className="container mx-auto max-w-7xl mt-7">
+                        <div className="flex items-center gap-3">
+                            <h2 className="text-2xl font-bold text-gray-900 dark:text-white font-peachi">
+                                Featured Project
+                            </h2>
+                            <img alt="Flower Icon" class="w-8 h-10 pointer-events-none select-none" src="https://cdn-icons-png.flaticon.com/512/5533/5533763.png"/>
+                        </div>
+                        {/* Project name {} */}
+                        <div>
+                            <div>
+                                <a href="">E-commerce</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
             </section>
         </section>
 
