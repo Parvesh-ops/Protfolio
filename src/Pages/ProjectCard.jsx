@@ -7,7 +7,7 @@ const ProjectCard = ({ title, description, tags, link }) => {
         <a
           href={link || "#"}
           target="_blank"
-          className="items-center text-lg md:text-xl font-bold text-white-800 hover:text-pink-500 transition-colors duration-300 group"
+          className="items-center underline text-lg md:text-xl font-bold text-white-800 hover:text-pink-500 transition-colors duration-300 group"
         >
           {title}
         </a>

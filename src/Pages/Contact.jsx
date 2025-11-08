@@ -1,4 +1,5 @@
 import React from "react";
+import img1 from '../images/contact.svg'
 import { Phone, Mail, MapPin } from "lucide-react"; // icons
 
 const ContactUs = () => {
@@ -77,11 +78,12 @@ const ContactUs = () => {
         {/* Illustration (Optional) */}
         <div className="flex-1 flex justify-center items-center">
           <img
-            src="/contact.svg" // <-- replace with your image path
+            src={img1}
             alt="Contact Illustration"
-            className="w-full max-w-md object-contain"
+            className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl h-auto object-contain"
           />
         </div>
+
       </div>
 
       {/* Contact Info Section */}
@@ -113,6 +115,21 @@ const ContactUs = () => {
           <p className="text-gray-300 text-sm">NetaChowk,Biratnagar,Nepal</p>
         </div>
       </div>
+
+      {/* Map section */}
+      <div className="w-full h-80 md:h-96 mt-8 rounded-xl overflow-hidden shadow-lg">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.123456789!2d87.2671234!3d26.4556789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef7d123456789%3A0x123456789abcdef!2sNeta%20Chowk%2C%20Biratnagar%2C%20Nepal!5e0!3m2!1sen!2snp!4v1699999999999!5m2!1sen!2snp"
+    width="100%"
+    height="100%"
+    className="border-0"
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Biratnagar Location"
+  ></iframe>
+</div>
+
     </section>
   );
 };
