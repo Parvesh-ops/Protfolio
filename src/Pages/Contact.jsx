@@ -1,11 +1,120 @@
-import React from 'react'
+import React from "react";
+import { Phone, Mail, MapPin } from "lucide-react"; // icons
 
-const Contact = () => {
+const ContactUs = () => {
   return (
-    <div>
-      Contact
-    </div>
-  )
-}
+    <section className="min-h-screen bg-[#0a0a0a] text-gray-200 flex flex-col items-center px-6 md:px-16 py-12">
+      {/* Heading */}
+      <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center text-white">
+        Contact <span>Us</span>
+      </h1>
 
-export default Contact
+      {/* Form & Illustration Container */}
+      <div className="w-full max-w-6xl bg-[#1a1919] rounded-xl shadow-lg p-6 md:p-12 flex flex-col md:flex-row items-center gap-10 mt-10">
+        {/* Form */}
+        <form className="flex-1 flex flex-col gap-4">
+          <h2 className="text-3xl font-bold text-white">
+            Get <span className="text-[#ee1a49]">In Touch</span>
+          </h2>
+          <p className="text-gray-400 font-normal mt-2 text-lg md:text-xl">
+            Let's build better and grow together!
+          </p>
+
+          {/* Name & Email */}
+          <div className="flex flex-col md:flex-row gap-4 mt-4">
+            <label className="flex flex-col gap-1 text-sm font-medium text-gray-400">
+              Name*
+              <input
+                type="text"
+                placeholder="Enter your name"
+                className="p-3 rounded-md bg-[#201f1f] text-white placeholder-gray-400 border-2 border-blue-500 hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                required
+              />
+            </label>
+
+            <label className="flex flex-col gap-1 text-sm font-medium text-gray-400">
+              Email*
+              <input
+                type="email"
+                placeholder="yourname@email.com"
+                className="p-3 rounded-md bg-[#201f1f] text-white placeholder-gray-400 border-2 border-blue-500 hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                required
+              />
+            </label>
+          </div>
+
+          {/* Subject */}
+          <label className="flex flex-col gap-1 text-sm font-medium text-gray-400 mt-3">
+            Subject*
+            <input
+              type="text"
+              placeholder="e.g. Web Development Inquiry"
+              className="p-3 rounded-md bg-[#201f1f] text-white placeholder-gray-400 border-2 border-blue-500 hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+              required
+            />
+          </label>
+
+          {/* Message */}
+          <label className="flex flex-col gap-1 text-sm font-medium text-gray-400 mt-3">
+            Message*
+            <textarea
+              rows="5"
+              placeholder="Your message here..."
+              className="p-3 rounded-md bg-[#201f1f] text-white placeholder-gray-400 border-2 border-blue-500 hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+              required
+            ></textarea>
+          </label>
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            className="mt-4 py-3 bg-gradient-to-r from-pink-500 to-blue-500 text-white font-medium rounded-md hover:brightness-90 transition-all"
+          >
+            Submit
+          </button>
+        </form>
+
+        {/* Illustration (Optional) */}
+        <div className="flex-1 flex justify-center items-center">
+          <img
+            src="/contact.svg" // <-- replace with your image path
+            alt="Contact Illustration"
+            className="w-full max-w-md object-contain"
+          />
+        </div>
+      </div>
+
+      {/* Contact Info Section */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-27 text-center mt-16">
+        {/* Phone Numbers */}
+        <div className="flex flex-col items-center  p-6 rounded-2xl ">
+          <div className="bg-gradient-to-r from-pink-600 to-red-500 p-4 rounded-full mb-4">
+            <Phone size={28} />
+          </div>
+          <h3 className="text-lg font-bold mb-1">Phone Numbers</h3>
+          <p className="text-gray-300 text-sm">9814336521</p>
+        </div>
+
+        {/* Email */}
+        <div className="flex flex-col items-center  p-6 rounded-2xl ">
+          <div className="bg-gradient-to-r from-pink-600 to-red-500 p-4 rounded-full mb-4">
+            <Mail size={28} />
+          </div>
+          <h3 className="text-lg font-bold mb-1">Email</h3>
+          <p className="text-gray-300 text-sm">arveshchaudhary@gmail.com</p>
+        </div>
+
+        {/* Location */}
+        <div className="flex flex-col items-center  p-6 rounded-2xl ">
+          <div className="bg-gradient-to-r from-pink-600 to-red-500 p-4 rounded-full mb-4">
+            <MapPin size={28} />
+          </div>
+          <h3 className="text-lg font-bold mb-1">Location</h3>
+          <p className="text-gray-300 text-sm">NetaChowk,Biratnagar,Nepal</p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ContactUs;

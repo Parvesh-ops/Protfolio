@@ -26,7 +26,7 @@ const Navbar = () => {
 
             {/* Desktop Links */}
             <ul className="hidden md:flex items-center gap-8 font-medium">
-                {['Home', 'About','Projects', 'Contact'].map((item) => (
+                {['Home', 'About','Project', 'Contact'].map((item) => (
                     <li key={item} className="relative group">
                         <Link
                             to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
@@ -84,13 +84,14 @@ const Navbar = () => {
                         <Link
                             to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
                             onClick={() => setIsOpen(false)}
-                            className="hover:text-blue-400 transition-colors"
+                            className="hover:text-blue-400 transition-colors p-4"
                         >
                             {item}
                         </Link>
                     </li>
                 ))}
-                <button className="bg-gradient-to-r from-blue-500 to-pink-500 text-white px-5 py-2 rounded-lg font-semibold">
+                <button 
+                className="bg-gradient-to-r from-blue-500 to-pink-500 text-white px-5 py-2 rounded-lg font-semibold cursor-pointer">
                     Quick Enquiry
                 </button>
             </ul>
