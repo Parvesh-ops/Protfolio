@@ -322,7 +322,7 @@ const Hero = () => {
                     <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center sm:justify-start mt-8 gap-4 sm:gap-6">
                         <Link
                             to="/about"
-                            className="rounded-lg bg-gradient-to-bl from-red-500 to-blue-500 text-white font-medium py-2 px-6 transition-all duration-300 transform hover:-translate-y-1 hover:brightness-90 w-full sm:w-auto text-center"
+                            className="rounded-lg bg-gradient-to-bl from-red-500 to-blue-500 text-white font-medium py-2 px-6 transition-all duration-300 transform hover:-translate-y-1 hover:brightness-90 flex sm:w-auto text-center"
                         >
                             Explore Now
                         </Link>
@@ -332,7 +332,7 @@ const Hero = () => {
                             className="rounded-lg border border-gray-300 bg-white dark:bg-black text-black dark:text-white 
              font-medium px-10 py-2 transition-all duration-300 transform 
              hover:-translate-y-0.5 hover:bg-gray-100 dark:hover:bg-gray-900
-             w-full sm:w-auto text-center"
+              sm:w-auto text-center"
                         >
                             Contact Support
                         </Link>
@@ -381,28 +381,8 @@ const Hero = () => {
             <About />
             <Project />
 
-            <div className="relative flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-xl">
-                {/* Text */}
-                <div className="flex-1 text-center sm:text-left">
-                    <h2 className="text-3xl font-bold uppercase text-slate-700 dark:text-slate-300">
-                        DO YOU WANT TO TALK ABOUT YOUR NEW
-                        <br />PROJECT?
-                    </h2>
-                    <p className="text-lg text-slate-600 dark:text-gray-300 mt-4">
-                        Contact me today and let's get started!
-                    </p>
-                </div>
 
-                {/* Button */}
-                <div className="flex justify-center sm:justify-end mt-6 sm:mt-0">
-                    <Link to="/contact"
-                        className="rounded-lg bg-gradient-to-bl from-red-500 to-blue-500 text-white font-medium py-2 px-6 transition-all duration-300 transform hover:-translate-y-1 hover:brightness-90"
-                    >
-                        Let's Collaborate
-                    </Link>
-                    <hr className="mt-4 border-neutral-200 dark:border-neutral-700" />
-                </div>
-            </div>
+
 
 
 

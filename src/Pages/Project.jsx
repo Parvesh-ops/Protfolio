@@ -1,6 +1,8 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import Internship from "./Internship";
+import Talk from "./Talk";
+
 
 const projects = [
     {
@@ -22,7 +24,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <section className="min-h-screen bg-[#0a0a0a] text-gray-200 flex flex-col justify-center px-6 md:px-16 py-16">
+        <section className=" bg-[#0a0a0a] text-gray-200 flex flex-col justify-center px-6 md:px-16 py-16">
             {/* Work Section */}
             <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex flex-col sm:flex-row sm:items-center sm:gap-2 text-gray-900 dark:text-white">
                 Work
@@ -51,7 +53,19 @@ const Projects = () => {
                 {projects.map((proj, i) => (
                     <ProjectCard key={i} {...proj} />
                 ))}
+                <p className="text-gray-400 dark:text-gray-300 text-base md:text-lg mt-4">
+                    <span className="font-semibold text-blue-500">Note:</span> I haven't hosted these projects yet, but you can
+                    <span className="font-medium text-white underline hover:text-blue-400 cursor-pointer">
+                         view the code and screenshots directly on my GitHub account
+                    </span>.
+                    Feel free to explore each project, see the implementation details, and check how the UI/UX is structured.
+                    Your feedback and suggestions are always welcome!
+                </p>
+
             </section>
+            {/* Talk */}
+            <Talk />
+
         </section>
     );
 };

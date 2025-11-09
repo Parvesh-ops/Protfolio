@@ -5,7 +5,7 @@ const ProjectCard = ({ title, description, tags, link }) => {
     <div className="mt-4">
       <div>
         <a
-          href={link || "#"}
+          href="https://github.com/Parvesh-ops?tab=repositories"
           target="_blank"
           className="items-center underline text-lg md:text-xl font-bold text-white-800 hover:text-pink-500 transition-colors duration-300 group"
         >
