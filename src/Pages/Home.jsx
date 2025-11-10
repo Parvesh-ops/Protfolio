@@ -283,6 +283,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { Link } from 'react-router-dom'
 import About from "./About";
 import Project from "./Project";
+import Footer from "./Footer";
 
 const Hero = () => {
     const techStack = [
@@ -380,6 +381,7 @@ const Hero = () => {
             </div>
             <About />
             <Project />
+            <Footer />
 
 
 

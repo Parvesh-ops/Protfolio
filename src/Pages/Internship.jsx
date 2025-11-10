@@ -3,18 +3,25 @@ import { LuArrowUpRight } from "react-icons/lu";
 
 const internships = [
   {
-    name: "Delta Tech PVT.LTD",
-    role: "Frontend Developer",
-    duration: "Aug 2025 - Present",
-    link: "https://deltatechnepal.com/",
-    color: "text-[#289c28]"
-  },
-  {
     name: "Swikar Codes",
     role: "Frontend Developer",
     duration: "May 2024 - Aug 2024",
     link: "https://swikarcodes.com/",
     color: "text-blue-400"
+  },
+  {
+    name: "Code with harry",
+    role: "Frontend Developer",
+    duration: "May 2025 present",
+    link: "https://www.youtube.com/@CodeWithHarry",
+    color: "text-red-600"
+  },
+  {
+    name: "Chai aur code",
+    role: "React Developer",
+    duration: "Aug 2025 present",
+    link: "https://www.youtube.com/watch?v=vz1RlUyrc3w&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige",
+    color: "text-yellow-600"
   },
 ];
 

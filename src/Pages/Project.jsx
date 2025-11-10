@@ -61,6 +61,7 @@ const Projects = () => {
                     Feel free to explore each project, see the implementation details, and check how the UI/UX is structured.
                     Your feedback and suggestions are always welcome!
                 </p>
+                <hr />
 
             </section>
             {/* Talk */}
