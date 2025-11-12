@@ -2,7 +2,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import Internship from "./Internship";
 import Talk from "./Talk";
-import flower from '../images/flower.png'
+import flower from '../Images/flower.png'
 
 
 const projects = [

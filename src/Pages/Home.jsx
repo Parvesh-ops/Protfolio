@@ -284,7 +284,7 @@ import { Link } from 'react-router-dom'
 import About from "./About";
 import Project from "./Project";
 import Footer from "./Footer";
-import frontend from '../images/frontend.webp'
+import frontend from '../Images/frontend.webp'
 
 const Hero = () => {
     const techStack = [

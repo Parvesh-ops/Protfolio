@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from '../images/contact.svg'
+import img1 from '../Images/contact.svg'
 import { Phone, Mail, MapPin } from "lucide-react"; // icons
 import Footer from "./Footer";
 
