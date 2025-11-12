@@ -284,6 +284,7 @@ import { Link } from 'react-router-dom'
 import About from "./About";
 import Project from "./Project";
 import Footer from "./Footer";
+import frontend from '../images/frontend.webp'
 
 const Hero = () => {
     const techStack = [
@@ -370,7 +371,7 @@ const Hero = () => {
                 {/* Right Illustration */}
                 <div className="flex-1 flex justify-center">
                     <img
-                        src="https://thumbs.dreamstime.com/b/front-end-developer-concept-man-creates-web-page-javascript-programming-situation-development-user-interface-people-scene-front-283801788.jpg"
+                        src={frontend}
                         alt="Frontend Developer Illustration"
                         className="w-60 h-60 md:w-72 md:h-72 object-contain cursor-pointer
               transition-transform duration-300 ease-in-out 
@@ -382,12 +383,6 @@ const Hero = () => {
             <About />
             <Project />
             <Footer />
-
-
-
-
-
-
 
         </section>
     );

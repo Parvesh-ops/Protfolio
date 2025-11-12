@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import Internship from "./Internship";
 import Talk from "./Talk";
+import flower from '../images/flower.png'
 
 
 const projects = [
@@ -31,7 +32,7 @@ const Projects = () => {
                 <img
                     alt="Flower Icon"
                     className="w-8 h-10 pointer-events-none select-none mt-2 sm:mt-0"
-                    src="https://cdn-icons-png.flaticon.com/512/5533/5533763.png"
+                    src={flower}
                 />
             </h2>
             <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-base md:text-lg mb-6">
