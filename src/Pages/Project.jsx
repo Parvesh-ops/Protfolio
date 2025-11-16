@@ -9,17 +9,17 @@ const projects = [
     {
         title: "E-commerce",
         description: "Built a responsive e-commerce website using React.js and Tailwind CSS. Users can search for products, view details, and add items to their cart. The app connects with RESTful APIs to fetch real-time product data, offering a smooth and interactive shopping experience.",
-        tags: ["React js", "Tailwind CSS", "API"],
+        tags: ["React js","Context Api", "Tailwind CSS", "Fake Product API","Axios"]
     },
     {
         title: "ReactifyAI",
         description: "ReactifyAI is a cutting-edge React frontend application built with Vite and Tailwind CSS, featuring secure user authentication, social login integration, and an AI-powered assistant leveraging the Google Gemini API. It demonstrates advanced frontend skills, including responsive design, smooth navigation with React Router v6, API integration with Axios, and modern UI effects like glassmorphism and gradients, showcasing both technical expertise and user-centric design.",
-        tags: ["React js", "Tailwind CSS", "Google Gemini API"],
+        tags: ["React js", "Tailwind CSS", "Google Gemini API","Axios"]
     },
     {
         title: "NewsApp",
         description: "React NewsApp is a responsive, modern news platform built with React, Tailwind CSS, and Axios, dynamically fetching the latest articles from NewsAPI. It features real-time search, category-based filtering, and a clean, responsive UI, demonstrating strong frontend skills in API integration, dynamic content rendering, and user-focused design.",
-        tags: ["React js", "Tailwind CSS"],
+        tags: ["React js", "Tailwind CSS","Axios"],
     },
 ];
 
