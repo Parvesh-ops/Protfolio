@@ -39,7 +39,4 @@ I enjoy turning complex problems into simple, beautiful, and intuitive designs.
 - Contact form to get in touch directly 📬  
 - **Dark/Light mode toggle** 🌗 
 
----
-
-
 
