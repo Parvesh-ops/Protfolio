@@ -41,7 +41,5 @@ I enjoy turning complex problems into simple, beautiful, and intuitive designs.
 
 ---
 
-## 🖼️ Live Demo
 
-👉 
 
