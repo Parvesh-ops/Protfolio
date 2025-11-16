@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import EnquiryModal from '../Components/EnquiryModal'
 
 const Talk = () => {
+  const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
+
   return (
-    <div className="bg-[#0a0a0a] text-gray-200 p-6 rounded-xl">
+    <>
+    <div className="text-gray-200 dark:text-gray-200 p-6 rounded-xl">
       {/* Content Wrapper */}
       <div className="relative flex flex-col sm:flex-row items-center gap-6">
         {/* Text */}
@@ -17,12 +21,18 @@ const Talk = () => {
         </div>
 
         {/* Button */}
-        <div className="flex items-center justify-center sm:justify-end mt-6 sm:mt-0">
-          <Link
-            to="/contact"
+        <div className="flex items-center justify-center sm:justify-end mt-6 sm:mt-0 gap-4">
+          <button
+            onClick={() => setIsEnquiryOpen(true)}
             className="rounded-lg bg-gradient-to-bl from-red-500 to-blue-500 text-white font-medium py-2 px-6 transition-all duration-300 transform hover:-translate-y-0.5 hover:brightness-90 cursor-pointer"
           >
-            Let's Collaborate
+            Quick Enquiry
+          </button>
+          <Link
+            to="/contact"
+            className="rounded-lg border-2 border-blue-500 text-blue-500 dark:text-blue-400 font-medium py-2 px-6 transition-all duration-300 transform hover:-translate-y-0.5 hover:bg-blue-500/10 cursor-pointer"
+          >
+            Contact Us
           </Link>
         </div>
       </div>
@@ -30,6 +40,9 @@ const Talk = () => {
       
       <hr className="mt-8 w-full border-neutral-700" />
     </div>
+    
+    <EnquiryModal isOpen={isEnquiryOpen} onClose={() => setIsEnquiryOpen(false)} />
+    </>
   )
 }
 

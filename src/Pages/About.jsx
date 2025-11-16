@@ -3,7 +3,7 @@ import Experience from "./Experience";
 
 const About = () => {
     return (
-        <section className="min-h-screen bg-[#0a0a0a] text-gray-200 flex flex-col items-center px-6 md:px-16 py-12">
+        <section className="min-h-screen text-gray-200 dark:text-gray-200 flex flex-col items-center px-6 md:px-16 py-12">
             <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-10 items-center">
 
                 <div className="space-y-6 text-center md:text-left">

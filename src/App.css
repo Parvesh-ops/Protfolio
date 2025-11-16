@@ -1,0 +1,118 @@
+/* Global Theme Styles */
+.app.dark-mode {
+    background-color: #0a0a0a;
+    color: #e5e7eb;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app.light-mode {
+    background-color: #f8f9fa;
+    color: #1f2937;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light mode - Section backgrounds */
+.app.light-mode section {
+    background-color: #ffffff !important;
+    color: #1f2937;
+}
+
+/* Light mode - Headings with vibrant colors */
+.app.light-mode h1 {
+    color: #000 !important;
+}
+
+.app.light-mode h2 {
+    color: #1e40af !important;
+}
+
+.app.light-mode h3,
+.app.light-mode h4,
+.app.light-mode h5,
+.app.light-mode h6 {
+    color: #1f2937 !important;
+}
+
+/* Light mode - Text colors */
+.app.light-mode p {
+    color: #374151 !important;
+}
+
+.app.light-mode span {
+    color: inherit;
+}
+
+/* Light mode - Specific text class overrides */
+.app.light-mode .text-gray-200 {
+    color: #1f2937 !important;
+}
+
+.app.light-mode .text-gray-300 {
+    color: #4b5563 !important;
+}
+
+.app.light-mode .text-gray-400 {
+    color: #6b7280 !important;
+}
+
+.app.light-mode .text-gray-500 {
+    color: #9ca3af !important;
+}
+
+/* Light mode - Accent colors for special text */
+.app.light-mode .text-blue-400 {
+    color: #2563eb !important;
+}
+
+.app.light-mode .text-cyan-400 {
+    color: #06b6d4 !important;
+}
+
+.app.light-mode .text-pink-500,
+.app.light-mode .text-purple-500,
+.app.light-mode .text-red-500 {
+    filter: brightness(0.9);
+}
+
+/* Light mode - Button text */
+.app.light-mode button {
+    color: inherit;
+}
+
+.app.light-mode .bg-white {
+    background-color: #f3f4f6 !important;
+    border-color: #d1d5db !important;
+}
+
+.app.light-mode .bg-black {
+    background-color: #f9fafb !important;
+    color: #1f2937 !important;
+    border: 1px solid #d1d5db !important;
+}
+
+/* Light mode - Link colors */
+.app.light-mode a {
+    color: #2563eb;
+}
+
+.app.light-mode a:hover {
+    color: #1d4ed8;
+}
+
+/* Light mode - Contact form styling */
+.app.light-mode .bg-\[\#1a1919\] {
+    background-color: #f3f4f6 !important;
+    border: 1px solid #d1d5db;
+}
+
+.app.light-mode input,
+.app.light-mode textarea {
+    background-color: #ffffff !important;
+    color: #1f2937 !important;
+    border-color: #3b82f6 !important;
+}
+
+.app.light-mode input::placeholder,
+.app.light-mode textarea::placeholder {
+    color: #9ca3af !important;
+}

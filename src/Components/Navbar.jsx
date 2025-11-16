@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Moon, Sun } from 'lucide-react';
+import { useTheme } from '../Context/ThemeContext';
+import EnquiryModal from './EnquiryModal';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [darkMode, setDarkMode] = useState(true);
+    const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
+    const { darkMode, toggleDarkMode } = useTheme();
 
     const toggleMenu = () => setIsOpen(!isOpen);
-    const toggleDarkMode = () => setDarkMode(!darkMode);
 
     return (
+        <>
         <nav
             className={`sticky top-0 z-50 flex items-center justify-between px-6 md:px-12 py-4 shadow-md transition-colors duration-300 ${darkMode ? 'bg-black text-white' : 'bg-white text-gray-900'
                 }`}
@@ -50,7 +53,10 @@ const Navbar = () => {
                 </button>
 
                 {/* Quick Enquiry */}
-                <button className="hidden md:inline-block bg-gradient-to-r from-blue-500 to-pink-500 text-white px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition">
+                <button 
+                    onClick={() => setIsEnquiryOpen(true)}
+                    className="hidden md:inline-block bg-gradient-to-r from-blue-500 to-pink-500 text-white px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition"
+                >
                     Quick Enquiry
                 </button>
 
@@ -79,7 +85,7 @@ const Navbar = () => {
                 className={`absolute top-16 left-0 w-full flex flex-col items-center gap-6 py-6 text-lg font-medium transition-all duration-500 ${darkMode ? 'bg-black text-white' : 'bg-white text-gray-900'
                     } ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
             >
-                {['Home', 'About','Projects','Contact'].map((item) => (
+                {['Home', 'About','Project', 'Contact'].map((item) => (
                     <li key={item}>
                         <Link
                             to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
@@ -91,11 +97,19 @@ const Navbar = () => {
                     </li>
                 ))}
                 <button 
-                className="bg-gradient-to-r from-blue-500 to-pink-500 text-white px-5 py-2 rounded-lg font-semibold cursor-pointer">
+                    onClick={() => {
+                        setIsEnquiryOpen(true);
+                        setIsOpen(false);
+                    }}
+                    className="bg-gradient-to-r from-blue-500 to-pink-500 text-white px-5 py-2 rounded-lg font-semibold cursor-pointer hover:opacity-90 transition"
+                >
                     Quick Enquiry
                 </button>
             </ul>
         </nav>
+        
+        <EnquiryModal isOpen={isEnquiryOpen} onClose={() => setIsEnquiryOpen(false)} />
+        </>
     );
 };
 

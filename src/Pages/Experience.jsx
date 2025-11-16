@@ -19,7 +19,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section className="bg-[#0a0a0a] text-gray-200 px-6 md:px-14 py-14">
+    <section className="text-gray-200 dark:text-gray-200 px-6 md:px-14 py-14">
       <div className="max-w-6xl mx-auto flex flex-col gap-6">
         <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white text-center">
           Experience

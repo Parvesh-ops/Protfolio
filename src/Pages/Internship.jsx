@@ -33,6 +33,7 @@ const Internship = () => {
           <a
             href={item.link}
             target="_blank"
+            rel="noopener noreferrer"
             className={`flex items-center text-lg md:text-xl font-medium underline group ${item.color}`}
           >
             {item.name}

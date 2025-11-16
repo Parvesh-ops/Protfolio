@@ -18,7 +18,7 @@ const Hero = () => {
     ];
 
     return (
-        <section className="min-h-screen bg-[#0a0a0a] text-gray-200 flex flex-col justify-center px-6 md:px-16">
+        <section className="min-h-screen text-gray-200 dark:text-gray-200 flex flex-col justify-center px-6 md:px-16">
             <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
 
                 {/* Left Text */}
@@ -94,6 +94,7 @@ const Hero = () => {
                     <img
                         src={frontend}
                         alt="Frontend Developer Illustration"
+                        loading="lazy"
                         className="w-60 h-60 md:w-72 md:h-72 object-contain cursor-pointer
               transition-transform duration-300 ease-in-out 
               hover:scale-105 hover:rotate-1 hover:shadow-lg"

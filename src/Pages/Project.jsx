@@ -25,12 +25,13 @@ const projects = [
 
 const Projects = () => {
     return (
-        <section className=" bg-[#0a0a0a] text-gray-200 flex flex-col justify-center px-6 md:px-16 py-16">
+        <section className="text-gray-200 dark:text-gray-200 flex flex-col justify-center px-6 md:px-16 py-16">
             {/* Work Section */}
             <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex flex-col sm:flex-row sm:items-center sm:gap-2 text-gray-900 dark:text-white">
                 Work
                 <img
                     alt="Flower Icon"
+                    loading="lazy"
                     className="w-8 h-10 pointer-events-none select-none mt-2 sm:mt-0"
                     src={flower}
                 />

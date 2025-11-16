@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col justify-between">
            <div className="flex items-center gap-4 mb-4">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/parvesh.chaudhary"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-neutral-800 hover:bg-[#1877F2] active:bg-[#1877F2] p-2 rounded-full transition-all duration-300"
@@ -17,7 +17,7 @@ const Footer = () => {
               <FaFacebookF className="w-5 h-5" />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-neutral-800 hover:bg-gradient-to-tr hover:from-[#f58529] hover:via-[#dd2a7b] hover:to-[#8134af] active:bg-gradient-to-tr active:from-[#f58529] active:via-[#dd2a7b] active:to-[#8134af] p-2 rounded-full transition-all duration-300"
@@ -25,7 +25,7 @@ const Footer = () => {
               <FaInstagram className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/parvesh-chaudhary"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-neutral-800 hover:bg-[#0077B5] active:bg-[#0077B5] p-2 rounded-full transition-all duration-300"

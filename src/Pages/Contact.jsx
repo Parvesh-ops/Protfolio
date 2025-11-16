@@ -4,17 +4,33 @@ import { Phone, Mail, MapPin } from "lucide-react"; // icons
 import Footer from "./Footer";
 
 const ContactUs = () => {
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // Get form data
+    const formData = new FormData(e.target);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      subject: formData.get('subject'),
+      message: formData.get('message')
+    };
+    
+    // Send email via EmailJS or backend API
+    console.log('Form submitted:', data);
+    alert('Thank you for reaching out! I will get back to you soon.');
+    e.target.reset();
+  };
   return (
-    <section className="min-h-screen bg-[#0a0a0a] text-gray-200 flex flex-col items-center px-6 md:px-16 py-12">
+    <section className="min-h-screen text-gray-200 dark:text-gray-200 flex flex-col items-center px-6 md:px-16 py-12">
       {/* Heading */}
       <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center text-white">
         Contact <span>Us</span>
       </h1>
 
       {/* Form & Illustration Container */}
-      <div className="w-full max-w-6xl bg-[#1a1919] rounded-xl shadow-lg p-6 md:p-12 flex flex-col md:flex-row items-center gap-10 mt-10">
+      <div className="w-full max-w-6xl bg-[#1a1919] dark:bg-[#1a1919] rounded-xl shadow-lg p-6 md:p-12 flex flex-col md:flex-row items-center gap-10 mt-10">
         {/* Form */}
-        <form className="flex-1 flex flex-col gap-4">
+        <form onSubmit={handleFormSubmit} className="flex-1 flex flex-col gap-4">
           <h2 className="text-3xl font-bold text-white">
             Get <span className="text-[#ee1a49]">In Touch</span>
           </h2>
@@ -28,6 +44,7 @@ const ContactUs = () => {
               Name*
               <input
                 type="text"
+                name="name"
                 placeholder="Enter your name"
                 className="p-3 rounded-md bg-[#201f1f] text-white placeholder-gray-400 border-2 border-blue-500 hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                 required
@@ -38,6 +55,7 @@ const ContactUs = () => {
               Email*
               <input
                 type="email"
+                name="email"
                 placeholder="yourname@email.com"
                 className="p-3 rounded-md bg-[#201f1f] text-white placeholder-gray-400 border-2 border-blue-500 hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                 required
@@ -50,6 +68,7 @@ const ContactUs = () => {
             Subject*
             <input
               type="text"
+              name="subject"
               placeholder="e.g. Web Development Inquiry"
               className="p-3 rounded-md bg-[#201f1f] text-white placeholder-gray-400 border-2 border-blue-500 hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
               required
@@ -61,6 +80,7 @@ const ContactUs = () => {
             Message*
             <textarea
               rows="5"
+              name="message"
               placeholder="Your message here..."
               className="p-3 rounded-md bg-[#201f1f] text-white placeholder-gray-400 border-2 border-blue-500 hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
               required
@@ -81,6 +101,7 @@ const ContactUs = () => {
           <img
             src={img1}
             alt="Contact Illustration"
+            loading="lazy"
             className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl h-auto object-contain"
           />
         </div>
