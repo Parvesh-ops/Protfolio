@@ -60,14 +60,6 @@ const Projects = () => {
                 {projects.map((proj, i) => (
                     <ProjectCard key={i} {...proj} />
                 ))}
-                <p className="text-gray-400 dark:text-gray-300 text-base md:text-lg mt-4">
-                    <span className="font-semibold text-blue-500">Note:</span> I haven't hosted these projects yet, but you can
-                    <span className="font-medium text-white underline hover:text-blue-400 cursor-pointer">
-                        view the code and screenshots directly on my GitHub account
-                    </span>.
-                    Feel free to explore each project, see the implementation details, and check how the UI/UX is structured.
-                    Your feedback and suggestions are always welcome!
-                </p>
                 <hr />
 
             </section>
