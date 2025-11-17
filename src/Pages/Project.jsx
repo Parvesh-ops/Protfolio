@@ -9,17 +9,20 @@ const projects = [
     {
         title: "E-commerce",
         description: "Built a responsive e-commerce website using React.js and Tailwind CSS. Users can search for products, view details, and add items to their cart. The app connects with RESTful APIs to fetch real-time product data, offering a smooth and interactive shopping experience.",
-        tags: ["React js","Context Api", "Tailwind CSS", "Fake Product API","Axios"]
+        tags: ["React js", "Context Api", "Tailwind CSS", "Fake Product API", "Axios"],
+        link: "https://e-commerce-project-swart-delta.vercel.app/"
     },
     {
         title: "ReactifyAI",
         description: "ReactifyAI is a cutting-edge React frontend application built with Vite and Tailwind CSS, featuring secure user authentication, social login integration, and an AI-powered assistant leveraging the Google Gemini API. It demonstrates advanced frontend skills, including responsive design, smooth navigation with React Router v6, API integration with Axios, and modern UI effects like glassmorphism and gradients, showcasing both technical expertise and user-centric design.",
-        tags: ["React js", "Tailwind CSS", "Google Gemini API","Axios"]
+        tags: ["React js", "Tailwind CSS", "Google Gemini API", "Axios"],
+        link: "https://reactify-ai-qfae.vercel.app/"
     },
     {
         title: "NewsApp",
         description: "React NewsApp is a responsive, modern news platform built with React, Tailwind CSS, and Axios, dynamically fetching the latest articles from NewsAPI. It features real-time search, category-based filtering, and a clean, responsive UI, demonstrating strong frontend skills in API integration, dynamic content rendering, and user-focused design.",
-        tags: ["React js", "Tailwind CSS","Axios"],
+        tags: ["React js", "Tailwind CSS", "Axios"],
+        link: "https://github.com/Parvesh-ops/News-Website"
     },
 ];
 
@@ -36,14 +39,16 @@ const Projects = () => {
                     src={flower}
                 />
             </h2>
-            <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-base md:text-lg mb-6">
+            <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-base md:text-lg mb-3">
                 A passionate <span className="text-blue-600 font-bold">Frontend Developer</span> specializing in building
                 beautiful, responsive, and interactive web applications. I enjoy transforming UI/UX designs into
                 pixel-perfect code using modern frontend technologies.
-                <p className="text-gray-400 leading-relaxed text-base md:text-lg">
-                    My goal is to create seamless user experiences while maintaining clean and reusable code. I love collaborating on
-                    exciting projects that challenge my skills and expand my knowledge in frontend development.
-                </p>
+            </p>
+
+            <p className="text-gray-400 leading-relaxed text-base md:text-lg mb-6">
+                My goal is to create seamless user experiences while maintaining clean and reusable code.
+                I love collaborating on exciting projects that challenge my skills and expand my knowledge
+                in frontend development.
             </p>
 
             {/* Internship */}
@@ -58,7 +63,7 @@ const Projects = () => {
                 <p className="text-gray-400 dark:text-gray-300 text-base md:text-lg mt-4">
                     <span className="font-semibold text-blue-500">Note:</span> I haven't hosted these projects yet, but you can
                     <span className="font-medium text-white underline hover:text-blue-400 cursor-pointer">
-                         view the code and screenshots directly on my GitHub account
+                        view the code and screenshots directly on my GitHub account
                     </span>.
                     Feel free to explore each project, see the implementation details, and check how the UI/UX is structured.
                     Your feedback and suggestions are always welcome!

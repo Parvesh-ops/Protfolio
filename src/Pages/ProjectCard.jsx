@@ -4,20 +4,26 @@ import { LuArrowUpRight } from "react-icons/lu";
 const ProjectCard = ({ title, description, tags, link }) => {
   return (
     <div className="mt-4">
-      <div>
+      
+      {/* Title + Link */}
+      <div className="flex items-center gap-2">
         <a
-          href={link || "https://github.com/Parvesh-ops?tab=repositories"}
+          href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 underline text-lg md:text-xl font-bold text-neutral-800 dark:text-white hover:text-pink-500 transition-colors duration-300 group"
+          className="group text-lg font-semibold text-blue-600 hover:text-blue-700 flex items-center gap-1"
         >
           {title}
           <LuArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:-translate-y-1" />
         </a>
       </div>
 
-      <p className="text-neutral-600 dark:text-neutral-300 mt-2">{description}</p>
+      {/* Description */}
+      <p className="text-neutral-600 dark:text-neutral-300 mt-2">
+        {description}
+      </p>
 
+      {/* Tags */}
       <div className="mt-2 flex flex-wrap gap-2">
         {tags.map((tag, i) => (
           <span
