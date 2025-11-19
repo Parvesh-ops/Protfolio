@@ -1,5 +1,6 @@
 import React from "react";
 import Experience from "./Experience";
+import { motion } from "framer-motion";
 
 const About = () => {
     return (
@@ -7,7 +8,19 @@ const About = () => {
             <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-10 items-center">
 
                 <div className="space-y-6 text-center md:text-left">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white text-center">About <span className="text-[#ee1a49]">Me</span> </h2>
+                    <h2 className="relative text-3xl md:text-4xl font-bold text-white text-center">
+                        About <span className="text-[#ee1a49]">Me</span>
+
+                        {/* Animated underline */}
+                        <motion.span
+                            initial={{ width: 0 }}
+                            animate={{ width: "6rem" }} // Tailwind w-20 equivalent
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            className="absolute bottom-0 left-1/2 h-1 bg-[#ee1a49] transform -translate-x-1/2"
+                        ></motion.span>
+                    </h2>
+
+
                     <p className="text-gray-400 leading-relaxed text-base md:text-lg">
                         As a <span className="text-blue-500 font-medium">Frontend Developer</span>,
                         I specialize in building clean, responsive, and high-performance web interfaces

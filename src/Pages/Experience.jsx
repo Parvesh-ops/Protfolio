@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const experiences = [
   {
@@ -6,14 +7,14 @@ const experiences = [
     duration: "2023-2025",
     description:
       "Built 5+ projects using React and Redux Toolkit, including e-commerce apps, admin dashboards, and authentication apps.",
-    skills: ["React", "Redux Toolkit", "context api", "JavaScript", "HTML",  "Tailwind CSS"],
+    skills: ["React", "Redux Toolkit", "context api", "JavaScript", "HTML", "Tailwind CSS"],
   },
   {
     title: "Portfolio Website",
     duration: "2025",
     description:
       "Created my personal portfolio website to showcase projects, skills, and resume. Implemented responsive design and smooth animations.",
-    skills: ["React", "CSS Animations", "Tailwind CSS","Responsive Design"],
+    skills: ["React", "CSS Animations", "Tailwind CSS", "Responsive Design"],
   },
 ];
 
@@ -21,8 +22,16 @@ const Experience = () => {
   return (
     <section className="text-gray-200 dark:text-gray-200 px-6 md:px-14 py-14">
       <div className="max-w-6xl mx-auto flex flex-col gap-6">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white text-center">
+        <h2 className="relative text-2xl md:text-3xl font-bold mb-6 text-white text-center">
           Experience
+
+          {/* Animated underline */}
+          <motion.span
+            initial={{ width: 0 }}
+            animate={{ width: "6rem" }} // Tailwind w-20 equivalent
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="absolute bottom-0 left-1/2 h-1 bg-[#ee1a49] transform -translate-x-1/2"
+          />
         </h2>
 
         <div className="flex flex-col md:flex-row md:gap-17 gap-4">

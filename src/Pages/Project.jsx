@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import Internship from "./Internship";
 import Talk from "./Talk";
+import { motion } from "framer-motion";
 
 
 const projects = [
@@ -29,8 +30,16 @@ const Projects = () => {
     return (
         <section className="text-gray-200 dark:text-gray-200 flex flex-col justify-center px-6 md:px-16 py-16">
             {/* Work Section */}
-            <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex flex-col sm:flex-row sm:items-center sm:gap-2 text-gray-900 dark:text-white">
+            <h2 className="relative text-2xl md:text-3xl font-semibold mb-6 text-white text-center">
                 Inspiration & Learning
+
+                {/* Animated underline */}
+                <motion.span
+                    initial={{ width: 0 }}
+                    animate={{ width: "8rem" }} // w-20 equivalent
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="absolute bottom-0 left-1/2 h-1 bg-[#ee1a49] transform -translate-x-1/2"
+                />
             </h2>
             <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-base md:text-lg mb-3">
                 Becoming a <span className="text-blue-600 font-bold">Frontend Developer</span> has been an exciting journey fueled by
@@ -50,7 +59,20 @@ const Projects = () => {
 
             {/* Projects */}
             <section className="mt-8">
-                <h2 className="text-2xl font-bold text-gray-400 dark:text-white mb-4">Things I've Built</h2>
+                import {motion} from "framer-motion";
+
+                <h2 className="relative text-2xl font-bold mb-6 text-white text-center">
+                    Things I've Built
+
+                    {/* Animated underline */}
+                    <motion.span
+                        initial={{ width: 0 }}
+                        animate={{ width: "7rem" }} // Tailwind w-20 equivalent
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className="absolute bottom-0 left-1/2 h-1 bg-[#ee1a49] transform -translate-x-1/2 w-20 md:w-28 lg:w-32"
+                    />
+                </h2>
+
                 {projects.map((proj, i) => (
                     <ProjectCard key={i} {...proj} />
                 ))}
