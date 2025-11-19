@@ -59,7 +59,6 @@ const Projects = () => {
 
             {/* Projects */}
             <section className="mt-8">
-                import {motion} from "framer-motion";
 
                 <h2 className="relative text-2xl font-bold mb-6 text-white text-center">
                     Things I've Built
