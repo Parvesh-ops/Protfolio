@@ -13,29 +13,29 @@
 
 /* Light mode - Section backgrounds */
 .app.light-mode section {
-    background-color: #ffffff !important;
+    background-color: #ffffff ;
     color: #1f2937;
 }
 
 /* Light mode - Headings with vibrant colors */
 .app.light-mode h1 {
-    color: #000 !important;
+    color: #000 ;
 }
 
 .app.light-mode h2 {
-    color: #1e40af !important;
+    color: #1e40af ;
 }
 
 .app.light-mode h3,
 .app.light-mode h4,
 .app.light-mode h5,
 .app.light-mode h6 {
-    color: #1f2937 !important;
+    color: #1f2937 ;
 }
 
 /* Light mode - Text colors */
 .app.light-mode p {
-    color: #374151 !important;
+    color: #374151 ;
 }
 
 .app.light-mode span {
@@ -44,28 +44,28 @@
 
 /* Light mode - Specific text class overrides */
 .app.light-mode .text-gray-200 {
-    color: #1f2937 !important;
+    color: #1f2937 ;
 }
 
 .app.light-mode .text-gray-300 {
-    color: #4b5563 !important;
+    color: #4b5563 ;
 }
 
 .app.light-mode .text-gray-400 {
-    color: #6b7280 !important;
+    color: #6b7280 ;
 }
 
 .app.light-mode .text-gray-500 {
-    color: #9ca3af !important;
+    color: #9ca3af ;
 }
 
 /* Light mode - Accent colors for special text */
 .app.light-mode .text-blue-400 {
-    color: #2563eb !important;
+    color: #2563eb ;
 }
 
 .app.light-mode .text-cyan-400 {
-    color: #06b6d4 !important;
+    color: #06b6d4 ;
 }
 
 .app.light-mode .text-pink-500,
@@ -80,14 +80,14 @@
 }
 
 .app.light-mode .bg-white {
-    background-color: #f3f4f6 !important;
-    border-color: #d1d5db !important;
+    background-color: #f3f4f6 ;
+    border-color: #d1d5db ;
 }
 
 .app.light-mode .bg-black {
-    background-color: #f9fafb !important;
-    color: #1f2937 !important;
-    border: 1px solid #d1d5db !important;
+    background-color: #f9fafb ;
+    color: #1f2937 ;
+    border: 1px solid #d1d5db ;
 }
 
 /* Light mode - Link colors */
@@ -101,18 +101,18 @@
 
 /* Light mode - Contact form styling */
 .app.light-mode .bg-\[\#1a1919\] {
-    background-color: #f3f4f6 !important;
+    background-color: #f3f4f6 ;
     border: 1px solid #d1d5db;
 }
 
 .app.light-mode input,
 .app.light-mode textarea {
-    background-color: #ffffff !important;
-    color: #1f2937 !important;
-    border-color: #3b82f6 !important;
+    background-color: #ffffff ;
+    color: #1f2937 ;
+    border-color: #3b82f6 ;
 }
 
 .app.light-mode input::placeholder,
 .app.light-mode textarea::placeholder {
-    color: #9ca3af !important;
+    color: #9ca3af ;
 }

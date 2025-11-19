@@ -1,52 +1,68 @@
 import React from "react";
 import { LuArrowUpRight } from "react-icons/lu";
+import { motion } from "framer-motion";
 
-const internships = [
+const resources = [
   {
     name: "Swikar Codes",
-    role: "Frontend Developer",
-    duration: "May 2024 - Aug 2024",
+    type: "Learning Platform",
+    focus: "Frontend Development",
     link: "https://swikarcodes.com/",
     color: "text-blue-400"
   },
   {
-    name: "Code with harry",
-    role: "Frontend Developer",
-    duration: "May 2025 present",
+    name: "Code With Harry",
+    type: "YouTube Channel",
+    focus: "Frontend Development",
     link: "https://www.youtube.com/@CodeWithHarry",
     color: "text-red-600"
   },
   {
-    name: "Chai aur code",
-    role: "React Developer",
-    duration: "Aug 2025 present",
+    name: "Chai aur Code",
+    type: "YouTube Channel",
+    focus: "React & JavaScript",
     link: "https://www.youtube.com/watch?v=vz1RlUyrc3w&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige",
     color: "text-yellow-600"
   },
 ];
 
-const Internship = () => {
+const LearningResources = () => {
   return (
-    <div className="space-y-6">
-      {internships.map((item, i) => (
-        <div key={i} className="sm:flex-row sm:justify-between sm:items-center">
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {resources.map((item, i) => (
+        <motion.div
+          key={i}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: i * 0.15 }}
+          viewport={{ once: true }}
+          className="p-5 rounded-xl border border-gray-200 dark:border-gray-800 
+                     bg-white dark:bg-gray-900 shadow-sm hover:shadow-xl 
+                     transition-all duration-300 group cursor-pointer"
+        >
           <a
             href={item.link}
             target="_blank"
             rel="noopener noreferrer"
-            className={`flex items-center text-lg md:text-xl font-medium underline group ${item.color}`}
+            className={`text-xl font-semibold underline flex items-center ${item.color}`}
           >
             {item.name}
-            <LuArrowUpRight className="w-6 h-7 ml-1 transition-transform duration-300 group-hover:-translate-y-1" />
+            <LuArrowUpRight className="w-6 h-6 ml-1 transition-transform duration-300 group-hover:-translate-y-1" />
           </a>
-          <div className="mt-1 sm:mt-0 text-sm sm:text-base">
-            <p className="text-gray-700 dark:text-gray-300 font-sans">{item.role}</p>
-            <span className="text-gray-500 dark:text-gray-400">{item.duration}</span>
-          </div>
-        </div>
+
+          <p className="mt-3 text-gray-700 dark:text-gray-300 text-sm font-medium">
+            {item.type}
+          </p>
+
+          <p className="text-gray-500 dark:text-gray-400 text-sm">
+            {item.focus}
+          </p>
+
+          <div className="mt-4 h-[2px] bg-gray-200 dark:bg-gray-800 w-0 group-hover:w-full transition-all duration-500"></div>
+        </motion.div>
       ))}
     </div>
   );
 };
 
-export default Internship;
+export default LearningResources;

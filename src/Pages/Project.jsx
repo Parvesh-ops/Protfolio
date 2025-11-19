@@ -2,7 +2,6 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import Internship from "./Internship";
 import Talk from "./Talk";
-import flower from '../Images/flower.png'
 
 
 const projects = [
@@ -31,32 +30,27 @@ const Projects = () => {
         <section className="text-gray-200 dark:text-gray-200 flex flex-col justify-center px-6 md:px-16 py-16">
             {/* Work Section */}
             <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex flex-col sm:flex-row sm:items-center sm:gap-2 text-gray-900 dark:text-white">
-                Work
-                <img
-                    alt="Flower Icon"
-                    loading="lazy"
-                    className="w-8 h-10 pointer-events-none select-none mt-2 sm:mt-0"
-                    src={flower}
-                />
+                Inspiration & Learning
             </h2>
             <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-base md:text-lg mb-3">
-                A passionate <span className="text-blue-600 font-bold">Frontend Developer</span> specializing in building
-                beautiful, responsive, and interactive web applications. I enjoy transforming UI/UX designs into
-                pixel-perfect code using modern frontend technologies.
+                Becoming a <span className="text-blue-600 font-bold">Frontend Developer</span> has been an exciting journey fueled by
+                consistent learning and curiosity. These platforms and creators played a major role in shaping my skills in HTML, CSS,
+                JavaScript, and React.
             </p>
 
             <p className="text-gray-400 leading-relaxed text-base md:text-lg mb-6">
-                My goal is to create seamless user experiences while maintaining clean and reusable code.
-                I love collaborating on exciting projects that challenge my skills and expand my knowledge
-                in frontend development.
+                I regularly followed their tutorials, best practices, and real-world examples to improve my problem-solving,
+                build better UI experiences, and stay updated with modern web development trends. Their guidance helped me
+                grow from beginner concepts to creating real, production-ready projects with confidence.
             </p>
+
 
             {/* Internship */}
             <Internship />
 
             {/* Projects */}
             <section className="mt-8">
-                <h2 className="text-2xl font-bold text-gray-400 dark:text-white mb-4">Featured Projects</h2>
+                <h2 className="text-2xl font-bold text-gray-400 dark:text-white mb-4">Things I've Built</h2>
                 {projects.map((proj, i) => (
                     <ProjectCard key={i} {...proj} />
                 ))}
