@@ -37,6 +37,10 @@ I enjoy turning complex problems into simple, beautiful, and intuitive designs.
 - Smooth transitions and hover animations ✨  
 - Projects showcase section with live demos and GitHub links 🔗  
 - Contact form to get in touch directly 📬  
-- **Dark/Light mode toggle** 🌗 
+- **Dark/Light mode toggle** 🌗
+
+#Demo
+![image alt](https://github.com/Parvesh-ops/Protfolio/blob/c1d129e783b5470f23db3dc179f2253ccffc354e/Screenshot-344.jpg)
+
 
 
