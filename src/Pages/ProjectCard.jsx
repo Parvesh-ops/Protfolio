@@ -28,7 +28,7 @@ const ProjectCard = ({ title, description, tags, link }) => {
         {tags.map((tag, i) => (
           <span
             key={i}
-            className="bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-200 text-xs px-2 py-1 rounded-[4px]"
+            className="bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-200 text-xs px-2 py-1 rounded-{4px}"
           >
             {tag}
           </span>

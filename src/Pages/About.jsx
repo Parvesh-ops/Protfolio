@@ -1,6 +1,7 @@
 import React from "react";
 import Experience from "./Experience";
 import { motion } from "framer-motion";
+import Whatsapp from "./Whatsapp";
 
 const About = () => {
     return (
@@ -40,6 +41,7 @@ const About = () => {
                 </div>
             </div>
             <Experience />
+            <Whatsapp />
         </section>
 
     );

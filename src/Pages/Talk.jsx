@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Whatsapp from './Whatsapp'
 
 const Talk = () => {
 
@@ -22,9 +23,9 @@ const Talk = () => {
           <div className="flex items-center justify-center sm:justify-end mt-6 sm:mt-0 gap-4">
             <Link
               to="/contact"
-              className="bg-gradient-to-r from-blue-500 to-pink-500 text-white font-semibold rounded-lg  py-2 px-5 
+              className="bg-linear-to-r from-blue-500 to-pink-500 text-white font-semibold rounded-lg  py-2 px-5 
              transition-all duration-300
-             hover:bg-gradient-to-r hover:from-blue-500 hover:to-pink-500 
+             hover:bg-linear-to-r hover:from-blue-500 hover:to-pink-500 
              hover:text-white hover:opacity-90 cursor-pointer"
             >
               Contact Us
@@ -32,9 +33,8 @@ const Talk = () => {
 
           </div>
         </div>
-
-
         <hr className="mt-8 w-full border-neutral-700" />
+        <Whatsapp />
       </div>
     </>
   )

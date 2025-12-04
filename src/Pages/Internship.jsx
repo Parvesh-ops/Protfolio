@@ -1,6 +1,7 @@
 import React from "react";
 import { LuArrowUpRight } from "react-icons/lu";
 import { motion } from "framer-motion"; 
+import Whatsapp from "./Whatsapp";
 
 const resources = [
   {
@@ -58,9 +59,10 @@ const LearningResources = () => {
             {item.focus}
           </p>
 
-          <div className="mt-4 h-[2px] bg-gray-200 dark:bg-gray-800 w-0 group-hover:w-full transition-all duration-500"></div>
+          <div className="mt-4 h-0.5 bg-gray-200 dark:bg-gray-800 w-0 group-hover:w-full transition-all duration-500"></div>
         </motion.div>
       ))}
+      <Whatsapp />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Whatsapp from "./Whatsapp";
 
 const experiences = [
   {
@@ -59,6 +60,7 @@ const Experience = () => {
           ))}
         </div>
       </div>
+      <Whatsapp />
     </section>
   );
 };

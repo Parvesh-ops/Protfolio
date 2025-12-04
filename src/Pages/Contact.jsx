@@ -2,6 +2,7 @@ import React from "react";
 import img1 from '../Images/contact.svg'
 import { Phone, Mail, MapPin } from "lucide-react"; // icons
 import { motion } from "framer-motion";
+import Whatsapp from "./Whatsapp";
 
 const ContactUs = () => {
   const handleFormSubmit = (e) => {
@@ -98,7 +99,7 @@ const ContactUs = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="mt-4 py-3 bg-gradient-to-r from-pink-500 to-blue-500 text-white font-medium rounded-md hover:brightness-90 transition-all"
+            className="mt-4 py-3 bg-linear-to-r from-pink-500 to-blue-500 text-white font-medium rounded-md hover:brightness-90 transition-all"
           >
             Submit
           </button>
@@ -120,7 +121,7 @@ const ContactUs = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-27 text-center mt-16">
         {/* Phone Numbers */}
         <div className="flex flex-col items-center  p-6 rounded-2xl ">
-          <div className="bg-gradient-to-r from-pink-600 to-red-500 p-4 rounded-full mb-4">
+          <div className="bg-linear-to-r from-pink-600 to-red-500 p-4 rounded-full mb-4">
             <Phone size={28} />
           </div>
           <h3 className="text-lg font-bold mb-1">Phone Numbers</h3>
@@ -129,7 +130,7 @@ const ContactUs = () => {
 
         {/* Email */}
         <div className="flex flex-col items-center  p-6 rounded-2xl ">
-          <div className="bg-gradient-to-r from-pink-600 to-red-500 p-4 rounded-full mb-4">
+          <div className="bg-linear-to-r from-pink-600 to-red-500 p-4 rounded-full mb-4">
             <Mail size={28} />
           </div>
           <h3 className="text-lg font-bold mb-1">Email</h3>
@@ -138,7 +139,7 @@ const ContactUs = () => {
 
         {/* Location */}
         <div className="flex flex-col items-center  p-6 rounded-2xl ">
-          <div className="bg-gradient-to-r from-pink-600 to-red-500 p-4 rounded-full mb-4">
+          <div className="bg-linear-to-r from-pink-600 to-red-500 p-4 rounded-full mb-4">
             <MapPin size={28} />
           </div>
           <h3 className="text-lg font-bold mb-1">Location</h3>
@@ -159,6 +160,7 @@ const ContactUs = () => {
           title="Biratnagar Location"
         ></iframe>
       </div>
+      <Whatsapp />
     </section>
   );
 };

@@ -20,7 +20,7 @@ const Footer = () => {
               href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-neutral-800 hover:bg-gradient-to-tr hover:from-[#f58529] hover:via-[#dd2a7b] hover:to-[#8134af] active:bg-gradient-to-tr active:from-[#f58529] active:via-[#dd2a7b] active:to-[#8134af] p-2 rounded-full transition-all duration-300"
+              className="bg-neutral-800 hover:bg-linear-to-tr hover:from-[#f58529] hover:via-[#dd2a7b] hover:to-[#8134af] active:bg-linear-to-tr active:from-[#f58529] active:via-[#dd2a7b] active:to-[#8134af] p-2 rounded-full transition-all duration-300"
             >
               <FaInstagram className="w-5 h-5" />
             </a>

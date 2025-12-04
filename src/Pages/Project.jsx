@@ -3,6 +3,7 @@ import ProjectCard from "./ProjectCard";
 import Internship from "./Internship";
 import Talk from "./Talk";
 import { motion } from "framer-motion";
+import Whatsapp from "./Whatsapp";
 
 
 const projects = [
@@ -80,7 +81,7 @@ const Projects = () => {
             </section>
             {/* Talk */}
             <Talk />
-
+<Whatsapp />
         </section>
     );
 };
