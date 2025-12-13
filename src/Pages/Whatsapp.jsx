@@ -8,7 +8,7 @@ const Whatsapp = () => {
         href="https://web.whatsapp.com/" 
         target="_blank"
         rel="noopener noreferrer"
-        className="group flex items-center space-x-2 bg-green-500  hover:bg-green-600 text-white font-medium py-3 px-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
+        className="group flex items-center space-x-2 bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 text-white font-medium py-3 px-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
       >
         {/* WhatsApp Icon */}
         <FaWhatsapp className="text-2xl" />

@@ -43,7 +43,7 @@ const EnquiryModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm overflow-y-auto py-4">
+    <div className="fixed inset-0 z-100 flex items-center justify-center bg-black/50 backdrop-blur-sm overflow-y-auto py-4">
       <div className={`relative w-full max-w-md mx-4 rounded-xl shadow-2xl transition-all duration-300 ${
         darkMode ? 'bg-[#1a1a1a]' : 'bg-white'
       } max-h-[90vh] overflow-y-auto`}>
@@ -219,7 +219,7 @@ const EnquiryModal = ({ isOpen, onClose }) => {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full mt-3 py-2 bg-gradient-to-r from-blue-500 to-pink-500 text-white font-semibold text-sm rounded-lg hover:opacity-90 transition-all transform hover:scale-105"
+                  className="w-full mt-3 py-2 bg-linear-to-r from-blue-500 to-pink-500 text-white font-semibold text-sm rounded-lg hover:opacity-90 transition-all transform hover:scale-105"
                 >
                   Send Enquiry
                 </button>

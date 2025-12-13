@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 
 import About from "./About";
 import Project from "./Project";
-import Footer from "./Footer";
-import Whatsapp from "./Whatsapp";
 import frontend from "../Images/frontend.webp";
 
 const Hero = () => {
@@ -101,14 +99,8 @@ const Hero = () => {
                 </div>
 
             </div>
-
-            {/* FLOATING WHATSAPP BUTTON */}
-            <Whatsapp />
-
-            {/* OTHER SECTIONS */}
             <About />
             <Project />
-            <Footer />
         </section>
     );
 };

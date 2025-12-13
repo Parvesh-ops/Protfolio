@@ -55,7 +55,7 @@ const Navbar = () => {
                 {/* Quick Enquiry */}
                 <button 
                     onClick={() => setIsEnquiryOpen(true)}
-                    className="hidden md:inline-block bg-gradient-to-r from-blue-500 to-pink-500 text-white px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition"
+                    className="hidden md:inline-block bg-linear-to-r from-blue-500 to-pink-500 text-white px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition"
                 >
                     Quick Enquiry
                 </button>
@@ -66,15 +66,15 @@ const Navbar = () => {
                     className="md:hidden flex flex-col gap-1 focus:outline-none"
                 >
                     <span
-                        className={`h-[2px] w-6 bg-current transition-transform duration-300 ${isOpen ? 'rotate-45 translate-y-[6px]' : ''
+                        className={`h-0.5 w-6 bg-current transition-transform duration-300 ${isOpen ? 'rotate-45 translate-y-1.5' : ''
                             }`}
                     ></span>
                     <span
-                        className={`h-[2px] w-6 bg-current transition-opacity duration-300 ${isOpen ? 'opacity-0' : ''
+                        className={`h-0.5 w-6 bg-current transition-opacity duration-300 ${isOpen ? 'opacity-0' : ''
                             }`}
                     ></span>
                     <span
-                        className={`h-[2px] w-6 bg-current transition-transform duration-300 ${isOpen ? '-rotate-45 -translate-y-[6px]' : ''
+                        className={`h-0.5 w-6 bg-current transition-transform duration-300 ${isOpen ? '-rotate-45 -translate-y-1.5' : ''
                             }`}
                     ></span>
                 </button>
@@ -101,7 +101,7 @@ const Navbar = () => {
                         setIsEnquiryOpen(true);
                         setIsOpen(false);
                     }}
-                    className="bg-gradient-to-r from-blue-500 to-pink-500 text-white px-5 py-2 rounded-lg font-semibold cursor-pointer hover:opacity-90 transition"
+                    className="bg-linear-to-r from-blue-500 to-pink-500 text-white px-5 py-2 rounded-lg font-semibold cursor-pointer hover:opacity-90 transition"
                 >
                     Quick Enquiry
                 </button>

@@ -2,7 +2,6 @@ import React from "react";
 import img1 from '../Images/contact.svg'
 import { Phone, Mail, MapPin } from "lucide-react"; // icons
 import { motion } from "framer-motion";
-import Whatsapp from "./Whatsapp";
 
 const ContactUs = () => {
   const handleFormSubmit = (e) => {
@@ -160,7 +159,6 @@ const ContactUs = () => {
           title="Biratnagar Location"
         ></iframe>
       </div>
-      <Whatsapp />
     </section>
   );
 };
