@@ -10,7 +10,7 @@ const projects = [
         title: "E-commerce",
         description: "Built a responsive e-commerce website using React.js and Tailwind CSS. Users can search for products, view details, and add items to their cart. The app connects with RESTful APIs to fetch real-time product data, offering a smooth and interactive shopping experience.",
         tags: ["React js", "Context Api", "Tailwind CSS", "Fake Product API", "Axios"],
-        link: "https://e-commerce-project-zi3f.vercel.app/"
+        link: "https://e-commerce-project-bm86.vercel.app/"
     },
     {
         title: "ReactifyAI",
