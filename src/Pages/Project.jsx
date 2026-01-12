@@ -13,6 +13,12 @@ const projects = [
         link: "https://e-commerce-project-bm86.vercel.app/"
     },
     {
+        title: "Movie Ticket Booking",
+        description: "A responsive single-page movie ticket booking application built with React and Vite, simulating a real-world cinema booking experience. Users can browse movies, select showtimes, choose seats visually, and complete bookings, while admins can manage shows and view bookings.",
+        tags: ["React", "Vite", "Tailwind CSS", "React Router", "JavaScript"],
+        link: "https://movie-ticket-booking-pied-beta.vercel.app/"
+    },
+    {
         title: "ReactifyAI",
         description: "ReactifyAI is a cutting-edge React frontend application built with Vite and Tailwind CSS, featuring secure user authentication, social login integration, and an AI-powered assistant leveraging the Google Gemini API. It demonstrates advanced frontend skills, including responsive design, smooth navigation with React Router v6, API integration with Axios, and modern UI effects like glassmorphism and gradients, showcasing both technical expertise and user-centric design.",
         tags: ["React js", "Tailwind CSS", "Google Gemini API", "Axios"],
