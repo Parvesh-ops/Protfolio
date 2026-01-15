@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Moon, Sun } from 'lucide-react';
 import { useTheme } from '../Context/ThemeContext';
 import EnquiryModal from './EnquiryModal';
@@ -19,28 +19,32 @@ const Navbar = () => {
         >
             {/* Logo */}
             <div className="text-2xl font-extrabold tracking-tight">
-                <Link to="/" className="nav-logo">
+                <NavLink to="/" className="nav-logo">
                     <span className="text-blue-600 block">Parvesh</span>
                     <span className="text-xs text-red-600 block -mt-1">
                        Code
                     </span>
-                </Link>
+                </NavLink>
             </div>
 
             {/* Desktop Links */}
-            <ul className="hidden md:flex items-center gap-8 font-medium">
-                {['Home', 'About','Project', 'Contact'].map((item) => (
-                    <li key={item} className="relative group">
-                        <Link
-                            to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
-                            className="px-3 py-2 rounded-full transition-all duration-300 text-gray-300 hover:text-white"
-                        >
-                            {item}
-                            <span className="absolute inset-0 rounded-full bg-gray-700/50 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 -z-10"></span>
-                        </Link>
-                    </li>
-                ))}
-            </ul>
+        
+<ul className="hidden md:flex items-center gap-8 font-medium">
+  {['Home', 'About', 'Project', 'Contact'].map((item) => (
+    <li key={item} className="relative group">
+      <NavLink
+        to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
+        className={({ isActive }) =>
+          `px-3 py-1  rounded-full transition-all duration-300 ${
+            isActive ? 'text-white bg-gray-700/50' : 'text-gray-300 hover:text-white'
+          }`
+        }
+      >
+        {item}
+      </NavLink>
+    </li>
+  ))}
+</ul>
 
             {/* Right side buttons */}
             <div className="flex items-center gap-4">
@@ -87,13 +91,13 @@ const Navbar = () => {
             >
                 {['Home', 'About','Project', 'Contact'].map((item) => (
                     <li key={item}>
-                        <Link
+                        <NavLink
                             to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
                             onClick={() => setIsOpen(false)}
                             className="hover:text-blue-400 transition-colors p-4"
                         >
                             {item}
-                        </Link>
+                        </NavLink>
                     </li>
                 ))}
                 <button 
