@@ -1,6 +1,6 @@
 import React from "react";
-import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaFigma } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
+import { FaReact, FaHtml5, FaCss3Alt,FaNodeJs, FaJsSquare, FaFigma } from "react-icons/fa";
+import { SiTailwindcss, SiMongodb, SiExpress } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 import About from "./About";
@@ -8,14 +8,22 @@ import Project from "./Project";
 import frontend from "../Images/frontend.webp";
 
 const Hero = () => {
-    const techStack = [
-        { icon: <FaReact className="text-3xl text-cyan-400" />, name: "React", delay: "0s" },
-        { icon: <SiTailwindcss className="text-3xl text-blue-400" />, name: "Tailwind CSS", delay: "0.2s" },
-        { icon: <FaJsSquare className="text-3xl text-yellow-400" />, name: "JavaScript", delay: "0.4s" },
-        { icon: <FaHtml5 className="text-3xl text-orange-500" />, name: "HTML", delay: "0.6s" },
-        { icon: <FaCss3Alt className="text-3xl text-blue-500" />, name: "CSS", delay: "0.8s" },
-        { icon: <FaFigma className="text-3xl text-pink-500" />, name: "Figma", delay: "1s" },
-    ];
+ const techStack = [
+    // Backend (MERN)
+    { icon: <SiMongodb className="text-3xl text-green-700" />, name: "MongoDB", delay: "0s" },
+    { icon: <SiExpress className="text-3xl text-gray-600" />, name: "Express.js", delay: "0.2s" },
+    { icon: <FaNodeJs className="text-3xl text-green-500" />, name: "Node.js", delay: "0.4s" },
+
+    // Frontend
+    { icon: <FaReact className="text-3xl text-cyan-400" />, name: "React", delay: "0.6s" },
+    { icon: <SiTailwindcss className="text-3xl text-blue-400" />, name: "Tailwind CSS", delay: "0.8s" },
+    { icon: <FaJsSquare className="text-3xl text-yellow-400" />, name: "JavaScript", delay: "1s" },
+    { icon: <FaHtml5 className="text-3xl text-orange-500" />, name: "HTML", delay: "1.2s" },
+    { icon: <FaCss3Alt className="text-3xl text-blue-500" />, name: "CSS", delay: "1.4s" },
+
+    // Design Tools
+    { icon: <FaFigma className="text-3xl text-pink-500" />, name: "Figma", delay: "1.6s" },
+];
 
     return (
         <section className="min-h-screen text-gray-200 dark:text-gray-200 flex flex-col justify-center px-6 md:px-16">
@@ -71,7 +79,7 @@ const Hero = () => {
                                   50% { transform: translateX(20px); opacity: 1; }
                                   100% { transform: translateX(-20px); opacity: 0.8; }
                                 }
-                                .animate-moveLeftToRight { animation: moveLeftToRight 4s ease-in-out infinite; }
+                                .animate-moveLeftToRight { animation: moveLeftToRight 5s ease-in-out infinite; }
                             `}
                         </style>
 
