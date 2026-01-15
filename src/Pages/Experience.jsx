@@ -1,14 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-
 const experiences = [
   {
-    title: "Freelance ",
-    duration: "2023-2025",
+    title: "Frontend Developer Intern at Lunar IT Solution",
+    duration: "Present",
     description:
-      "Built 5+ projects using React and Redux Toolkit, including e-commerce apps, admin dashboards, and authentication apps.",
-    skills: ["React", "Redux Toolkit", "context api", "JavaScript", "HTML", "Tailwind CSS"],
+      "Developed reusable and responsive React components and implemented routing using React Router DOM. Integrated REST APIs using Axios and managed global state using Context API and Redux Toolkit. Collaborated with backend developers for API consumption, enhanced UI/UX, and optimized application performance across multiple projects, including e-commerce platforms, admin dashboards, and authentication apps.",
+    skills: ["React", "Redux Toolkit", "Context API", "JavaScript", "HTML", "Tailwind CSS", "Axios", "React Router DOM"],
   },
   {
     title: "Portfolio Website",
@@ -35,22 +34,22 @@ const Experience = () => {
           />
         </h2>
 
-        <div className="flex flex-col md:flex-row md:gap-17 gap-4">
+        <div className="flex flex-col gap-6">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="bg-gray-800/50 p-6 rounded-xl shadow-lg hover:shadow-red-500 transition-shadow duration-300"
+              className="p-4 rounded-xl shadow-lg hover:shadow-red-500 transition-shadow duration-300"
             >
               <h3 className="text-xl md:text-2xl font-semibold text-white">
                 {exp.title}
               </h3>
               <p className="text-gray-400 italic mt-1">{exp.duration}</p>
-              <p className="text-gray-200 mt-4 leading-relaxed">{exp.description}</p>
-              <div className="mt-4 flex flex-wrap gap-2">
+              <p className="text-gray-200 mt-2 leading-relaxed">{exp.description}</p>
+              <div className="mt-2 flex flex-wrap gap-2">
                 {exp.skills.map((skill, i) => (
                   <span
                     key={i}
-                    className="px-3 py-1 bg-red-500 text-white rounded-full text-sm font-medium"
+                    className="px-1 py-1 bg-gray-500 rounded-sm text-sm font-medium"
                   >
                     {skill}
                   </span>
