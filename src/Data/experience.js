@@ -1,9 +1,9 @@
 export const experiences = [
   {
     role: "Intern Frontend / React Developer",
-    company: "Lunar IT Solution Pvt. Ltd.",
-    period: "Nov 2025 – Present",
+    company: "Youth IT.",
+    period: "Feb 2026 – Present",
     description:
-      "Developing responsive and reusable UI components using React.js. Using Context API and Redux Toolkit for state management, and React Router DOM for implementing client-side routing. Collaborating with the team to integrate APIs, improve UI performance, and follow best frontend development practices.",
+      "Frontend Intern at YouthIT Office, working on real-world applications using Next.js, React Query, Zod, and shadcn/ui. Collaborating with backend developers and UI/UX designers to build scalable, high-performance, and user-friendly interfaces.",
   },
 ];

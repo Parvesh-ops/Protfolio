@@ -1,6 +1,6 @@
 import React from "react";
 import { experiences } from "../Data/experience";
-import Lunar from "../Images/Lunar.png";
+import youth from "../Images/youthit.jpg";
 import { motion } from "framer-motion";
 
 const Experience = () => {
@@ -31,11 +31,11 @@ const Experience = () => {
           >
             {/* Logo */}
             <div className="shrink-0">
-              <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center overflow-hidden">
+              <div className="w-12 h-12 object-cover rounded-lg bg-white flex items-center justify-center overflow-hidden">
                 <img
-                  src={Lunar}
-                  alt="Lunar company"
-                  className="w-full h-full object-contain"
+                  src={youth}
+                  alt="youthit company"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
