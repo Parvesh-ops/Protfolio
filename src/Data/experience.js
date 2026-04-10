@@ -1,5 +1,9 @@
+import youth from "../Images/youthit.jpg";
+
+
 export const experiences = [
   {
+    image: youth,
     role: "Intern Frontend / React Developer",
     company: "Youth IT.",
     period: "Feb 2026 – Present",

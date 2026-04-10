@@ -31,9 +31,9 @@ const Experience = () => {
           >
             {/* Logo */}
             <div className="shrink-0">
-              <div className="w-12 h-12 object-cover rounded-lg bg-white flex items-center justify-center overflow-hidden">
+              <div className="w-12 h-12 object-cover rounded-none bg-white flex items-center justify-center overflow-hidden">
                 <img
-                  src={youth}
+                  src={exp.image}
                   alt="youthit company"
                   className="w-full h-full object-cover"
                 />
@@ -55,7 +55,7 @@ const Experience = () => {
                 {exp.company}
               </p>
 
-              <p className="mt-3 font-bold text-gray-300 leading-relaxed text-sm">
+              <p className="mt-3  text-gray-300 leading-relaxed text-l">
                 {exp.description}
               </p>
             </div>
